@@ -1,0 +1,169 @@
+ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: 0;
+}
+
+li a {
+  height: 20rem;
+  width: 20rem;
+  border: 1px solid black;
+  border-radius: 1rem;
+  margin: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+  color: #860A35;
+}
+
+li a img {
+  width: 100%;
+  height: auto;
+  transition: opacity 0.3s ease-in-out;
+}
+
+li a .content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  display: flex;
+  flex-direction: column; /* Display elements in a column */
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+li a:hover img {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+li a:hover .content {
+  opacity: 1;
+}
+ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+    border-bottom:5px solid black;
+  }
+  
+  li a {
+    height: 20rem;
+    width: 20rem;
+    border: 1px solid black;
+    border-radius: 1rem;
+    margin: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+    color: #860A35;
+  }
+  
+  li a img {
+    width: 100%;
+    height: auto;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  li a .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    display: flex;
+    flex-direction: column; /* Display elements in a column */
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  li a:hover img {
+    opacity: 0.5;
+    cursor: pointer;
+  }
+  
+  li a:hover .content {
+    opacity: 1;
+  }
+  
+
+  .text h1 {
+    font-weight: bold;
+    padding: 1em;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.text h1:hover::before {
+    content: attr(data-hover);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: inherit;
+    z-index: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+    color:transparent;
+    opacity:0;
+}
+
+.text h1:hover::before {
+    opacity: 1;
+    visibility: visible;
+    color:inherit;
+}
+
+.history {
+  display: flex;
+  align-items: center;
+}
+
+.history img {
+  margin: 1em;
+  border: 1em solid #860A35;
+}
+
+.history p {
+  text-align: center;
+  margin: 0 1em; /* top right bottom left */
+}
+.image {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom:5px solid black;
+}
+
+.image img {
+  order: 2; /* Set the order to 2 to place the image on the right */
+  margin: 1em;
+  border: 1em solid #860A35;
+}
+
+.image p {
+  order: 1; /* Set the order to 1 to place the paragraph on the left */
+  margin: 0 1em; /* Adjust margin as needed */
+  text-align: center;
+}

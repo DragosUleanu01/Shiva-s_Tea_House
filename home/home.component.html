@@ -1,0 +1,70 @@
+<div class = text>
+<h1 data-hover ='उत्पादनम्'>Products </h1>
+</div>
+<ul>
+    <li *ngFor="let tea of teas">
+        <a>    
+            
+            <img src="{{tea.imageUrl}}" alt="">
+            <div class ='content'>
+                <div class ='name'>
+                   Id: {{tea.id}} <br>
+                   Name: {{tea.name}}<br>
+                    Price: {{tea.price}}₹<br>
+                    Origins: {{tea.origins}}
+
+
+                </div>
+
+
+
+            </div>
+            
+        </a>
+        
+    </li>
+
+   
+    
+
+
+</ul>
+
+<div class = text>
+
+    <h1 data-hover ='इतिहास' >History</h1>
+
+
+</div>
+
+<div class = history>
+    
+
+<img src="assets/images/Shiva.png" height="500" width="500">
+<p>Shiva is one of the principal deities in Hinduism and is often referred to as the "Destroyer" or "Transformer" within the Holy Trinity, or Trimurti, which also includes Brahma (the Creator) and Vishnu (the Preserver). Shiva is a complex and multifaceted deity with various aspects.
+ Shiva is often depicted as an ascetic, living in meditation in the Himalayas. He is also considered the ultimate yogi, symbolizing the disciplined and controlled pursuit of spiritual knowledge and enlightenment.Shiva is married to Parvati, who is a manifestation of Shakti, the divine feminine energy. Together, they form a harmonious union representing the balance of male and female energies.Shiva is often depicted with a third eye, a crescent moon on his head, a snake around his neck, and a trident (trishula) in his hand. Each of these symbols carries profound symbolism in Hindu mythology.</p>
+
+</div>
+
+<div class = image>
+    <img src="assets/images/Parvati.png" height="500" width="500">
+   <p>Parvati is a goddess in Hinduism and is considered the divine consort of Lord Shiva, one of the principal deities in the Hindu pantheon. She is also known by various other names such as Uma, Gauri, and Shakti. Parvati is revered as a goddess of love, fertility, devotion, and power.Parvati is best known as the wife and companion of Lord Shiva. Their union symbolizes the ideal marital relationship and the balance of male and female energies in the universe.Parvati is considered a manifestation of Shakti, the divine feminine energy and the consort of Shiva. She is often referred to as Adi Parashakti, the primordial cosmic energy.Parvati is believed to have various forms and manifestations, each representing different aspects of the divine feminine. These forms include Durga, Kali, and others, each with unique attributes and symbolism.</p>
+   
+</div>
+
+<div class = text>
+
+    <h1 data-hover ='स्थानं ' >Location</h1>
+
+
+</div>
+
+<div class="video">
+    <video width="100%" height="100%" loop muted autoplay >
+      <source [src]="videoPath" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+
+   
